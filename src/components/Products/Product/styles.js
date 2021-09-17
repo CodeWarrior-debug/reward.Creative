@@ -4,7 +4,8 @@ export default makeStyles(() => ({
   root: {
     // maxWidth: 345, original width style
     maxWidth: '100%',
-    border: '3px solid blue'
+    border: '3px solid blue',
+    boderRadius: '5px',
   },
   media: {
     height: 0,
@@ -17,5 +18,8 @@ export default makeStyles(() => ({
   cardContent: {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: 'gray',
+    borderRadius: '5px',
   },
 }));

@@ -14,10 +14,10 @@ const Product = ({ product, onAddToCart }) => {
       <CardMedia className={classes.media} image={product.media.source} title={product.name} />
       <CardContent>
         <div className={classes.cardContent}>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography variant="h5" component="h2"> {/* TODO: add padding or margin on left */}
             {product.name}
           </Typography>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography variant="h5" component="h2">{/* TODO: add padding or margin on right */}
             ${product.price.formatted}
           </Typography>
         </div>
@@ -25,7 +25,8 @@ const Product = ({ product, onAddToCart }) => {
       </CardContent>
       <CardActions disableSpacing className={classes.cardActions}>
         <IconButton aria-label="Add to Cart" onClick={handleAddToCart}>
-          <AddShoppingCart />
+          {/* <AddShoppingCart style={{ color: 'green[500]' }} /> */}
+          <AddShoppingCart color="secondary" />
         </IconButton>
       </CardActions>
     </Card>
